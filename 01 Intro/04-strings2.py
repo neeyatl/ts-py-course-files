@@ -37,3 +37,19 @@ print(parrot[3 - len])
 print(parrot[6 - len])
 print(parrot[8 - len])
 print()
+
+print(parrot[0:3])
+print(parrot[3:5])
+print(parrot[:3])   # Start value defaults to the beginning index
+print(parrot[10:])  # End value defaults to length
+print()
+print(parrot[:6] + parrot[6:])
+print()
+print(parrot[:])
+print(parrot[::2])
+print(parrot[::1])
+# print(parrot[::0])  # ValueError: slice step cannot be zero
+
+print('\n')
+
+print(parrot[-4:2:-1])  # -4 => B and not including 2 => r
