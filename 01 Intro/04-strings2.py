@@ -53,3 +53,12 @@ print(parrot[::1])
 print('\n')
 
 print(parrot[-4:2:-1])  # -4 => B and not including 2 => r
+
+
+number = '198;232 145 168:192,343;903'
+separators = number[3::4]
+print(separators)
+
+values = "".join(c if c not in separators else " " for c in number).split()
+print(values)
+print([int(num) for num in values]) # Generate a list of integers
