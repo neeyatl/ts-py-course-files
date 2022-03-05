@@ -1,17 +1,29 @@
-answer = 5
+from random import randint
 
-guess = int(input("Enter a number between 0 and 9: "))
+lower_limit = 0
+upper_limit = 9
+answer = randint(lower_limit,upper_limit)
+print(answer)   # TODO: Delete after testing
 
-if guess == answer:
-    print("You got it the first time.")
-else:
-    if guess < answer:
+try_count = 1
+guess = int(input("Enter a number between {} and {}: "
+                  .format(lower_limit,upper_limit)))
+
+while guess != answer:
+    if try_count > 3:
+        print('Exceeded attempts. Game Over.')
+        break
+    elif guess < answer:
         print('Guess a little higher')
     else:
         print('Guess a little lower')
+
     guess = int(input())
-    if(guess == answer):
-        print("You guessed it. Well done.")
-    else:
-        print('You guessed incorrectly')
+    try_count+=1
+    if guess == -1:
+        print('Game Over')
+        break
+else:
+    print("You guessed it. Well done.")
+
 
