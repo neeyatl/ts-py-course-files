@@ -9,7 +9,7 @@ try_count = 1
 guess = int(input("Enter a number between {} and {}: "
                   .format(lower_limit,upper_limit)))
 
-while guess != answer:
+while guess != answer:  # Conditional debugging can be used here to only hit breakpoint when a condition is met. Saves time, specially when user-input is involved.
     if try_count > 3:
         print('Exceeded attempts. Game Over.')
         break
