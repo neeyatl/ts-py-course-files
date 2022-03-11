@@ -8,7 +8,7 @@ available_parts = ["Monitor",
                    "External HDD",
                    "Pendrive"
                    ]
-current_choice = "100"  # Initialized with an unreachable value to ensure compatibility
+current_choice = "-1"  # Initialized with an unreachable value to ensure compatibility
 computer_parts = []
 
 while current_choice != '0':
