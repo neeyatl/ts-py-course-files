@@ -5,6 +5,8 @@ numbers = [
 min_val = 100
 max_val = 200
 
+# This code is much more efficient than reversed list methods.
+# Deleting a slice is efficient over deleting individual items.
 # trim smaller values
 stop = None
 for i, num in enumerate(numbers):
