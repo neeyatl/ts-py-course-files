@@ -44,12 +44,14 @@ games = [
 print(games[5][3][2][1])
 print()
 
+POKEMON_LIST_INDEX = 3
+
 choice = "-"
 while choice != "q":
     if choice in "".join(str(digit) for digit in range(1, len(games) + 1)):
         pmn_choice = "-"
         print("Choose a Pokemon: ")
-        pokemon = games[int(choice) - 1][3]
+        pokemon = games[int(choice) - 1][POKEMON_LIST_INDEX]
         for i in range(len(pokemon)):
             print("{:3}: {}"
                   .format(i + 1, pokemon[i][1]))
@@ -64,9 +66,9 @@ while choice != "q":
         
     else:
         print("Choose a game (Enter q to exit): ")
-        for i in range(len(games)):
-            print("{:3}: {}"
-                  .format(i + 1, games[i][0]))
+        for i, (title, console, year, pokemon) in enumerate(games):
+            print("{:3}: {} ({} console) (released in {})"
+                  .format(i + 1, title, console, year))
 
         choice = input()
         print()
