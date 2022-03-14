@@ -14,9 +14,10 @@ print('-'*30)
 for meal in menu:
     for item in meal:
         if item != "spam":
-            print(item)
+            print(item, end=", ")   # Prints ", " instead of \n after each item
     print()
 
+print()
 print("Remove Items Method")
 print('-'*30)
 for meal in menu:
@@ -27,6 +28,6 @@ for meal in menu:
 
 for meal in menu:
     for item in meal:
-        print(item)
+        print(item, end=" ")
     print()
 
