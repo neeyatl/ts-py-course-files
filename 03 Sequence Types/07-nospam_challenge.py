@@ -12,10 +12,7 @@ menu = [
 print("Printing Method")
 print('-'*30)
 for meal in menu:
-    for item in meal:
-        if item != "spam":
-            print(item, end=", ")   # Prints ", " instead of \n after each item
-    print()
+    print(", ".join(item for item in meal if item != "spam"))
 
 print()
 print("Remove Items Method")
