@@ -6,10 +6,11 @@ print(display_dict)
 shopping_pantry = {}
 
 def add_to_dict(data: dict, item: str, quantity: int):
-    if item in data:
-        data[item] += quantity
-    else:
-        data[item] = quantity
+    # if item in data:
+    #     data[item] += quantity
+    # else:
+    #     data[item] = quantity
+    data[item] = data.setdefault(item, 0) + quantity
 
 choice = "-"
 while choice != '0':
@@ -38,6 +39,6 @@ while choice != '0':
     choice = input("> ")
 
 print("\nYour shopping list: ")
-for item in sorted(shopping_pantry.items()):
+for item in shopping_pantry.items():
     print(item)
 print
