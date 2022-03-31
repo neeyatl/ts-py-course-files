@@ -29,13 +29,13 @@ print(parrot[-6])
 print()
 
 # index - length gives the exact negative indexing values
-len = 14
-print(parrot[3 - len])
-print(parrot[4 - len])
-print(parrot[9 - len])
-print(parrot[3 - len])
-print(parrot[6 - len])
-print(parrot[8 - len])
+length = 14
+print(parrot[3 - length])
+print(parrot[4 - length])
+print(parrot[9 - length])
+print(parrot[3 - length])
+print(parrot[6 - length])
+print(parrot[8 - length])
 print()
 
 print(parrot[0:3])

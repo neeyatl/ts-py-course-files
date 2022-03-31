@@ -2,7 +2,7 @@ age = 22
 weight = 78
 height = "5'11"
 print("My age is {0} years. I weight {1} which is fine for a {2} tall man.".format(age,weight,height))
-# Gotta remember that it's '.' format, not ',' format as in C or Java printf functions.
+# Gotta remember that it's '.' format, not ',' as in C or Java printf functions.
 
 print('''\nJan: {2}
 Feb: {0}

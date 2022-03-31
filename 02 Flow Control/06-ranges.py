@@ -10,7 +10,7 @@ for i in range(10):     # Start value defaults to 0
 
 print(trace)
 
-# Have to use a start value when you want to use steps as well
+# Have to use a start value when you want to use steps
 for i in range(0, 10, 2):   # Negative step value to go backwards
     print(i)
 
