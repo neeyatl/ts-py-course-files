@@ -9,5 +9,3 @@ elif age > 150:
     print("Live long and prosper though.")
 else:
     print("You're old enough to vote. Long live democracy.")
-
-

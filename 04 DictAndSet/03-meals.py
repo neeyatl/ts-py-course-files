@@ -39,6 +39,8 @@ while choice != '0':
     choice = input("> ")
 
 print("\nYour shopping list: ")
+
 for item in shopping_pantry.items():
     print(item)
-print
+
+print()

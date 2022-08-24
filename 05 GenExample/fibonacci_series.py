@@ -4,7 +4,6 @@ def fibonacci():
         yield current
         current, previous = current + previous, current
 
-
 fib = fibonacci()
 c = 0
 while c < 21:

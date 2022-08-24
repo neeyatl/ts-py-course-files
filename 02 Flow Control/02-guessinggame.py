@@ -25,5 +25,3 @@ while guess != answer:  # Conditional debugging can be used here to only hit bre
         break
 else:
     print("You guessed it. Well done.")
-
-

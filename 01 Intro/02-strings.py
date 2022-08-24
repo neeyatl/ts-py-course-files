@@ -9,14 +9,14 @@ long string for you
 
 print(greeting,long_str)
 
-not_split = """\
+no_new_lines = """\
 No \
 new lines \
 for \
-you
+you \
 """
 
-print(not_split)
+print(no_new_lines)
 
 for i in long_str.split(' '):
     print(i)

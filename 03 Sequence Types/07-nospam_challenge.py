@@ -15,6 +15,7 @@ for meal in menu:
     print(", ".join(item for item in meal if item != "spam"))
 
 print()
+
 print("Remove Items Method")
 print('-'*30)
 for meal in menu:
@@ -27,4 +28,3 @@ for meal in menu:
     for item in meal:
         print(item, end=" ")
     print()
-

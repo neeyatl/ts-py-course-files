@@ -4,7 +4,6 @@ def odd_numbers():
         yield n
         n += 2
 
-
 odds = odd_numbers()
 c = 0
 while c < 100:
